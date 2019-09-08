@@ -109,6 +109,7 @@ vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
 vendor/bin/hw/vendor.qti.hardware.vibrator@1.2-service
+vendor/bin/hw/vendor.qti.secure_element@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 vendor/bin/hw/wpa_supplicant
 vendor/bin/ims_rtp_daemon
@@ -203,6 +204,7 @@ vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.vibrator@1.2-service.rc
+vendor/etc/init/vendor.qti.secure_element@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/msm_irqbalance.conf
@@ -421,6 +423,7 @@ vendor/lib/soundfx/libshoebox.so
 vendor/lib/vendor.qti.hardware.perf@1.0.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so
@@ -561,6 +564,7 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib64/hw/vulkan.msmnile.so
+vendor/lib64/jcos_client.so
 vendor/lib64/lib-dplmedia.so
 vendor/lib64/lib-imscmservice.so
 vendor/lib64/lib-imsdpl.so
@@ -800,12 +804,14 @@ vendor/lib64/libwvhidl.so
 vendor/lib64/libXMFD_AgeGender.so
 vendor/lib64/libxml.so
 vendor/lib64/libxtadapter.so
+vendor/lib64/ls_client.so
 vendor/lib64/mibokeh_855_opencl.bin
 vendor/lib64/qcrild_librilutils.so
 vendor/lib64/sensors.elliptic.so
 vendor/lib64/sensors.mius.proximity.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.so
+vendor/lib64/se_extn_client.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
