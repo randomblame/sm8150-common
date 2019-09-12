@@ -158,7 +158,7 @@ TARGET_RIL_VARIANT := caf
 VENDOR_SECURITY_PATCH := 2018-08-05
 
 # Sepolicy
-include device/qcom/sepolicy/sepolicy.mk
+# include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
