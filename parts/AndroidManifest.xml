@@ -29,31 +29,4 @@
     <uses-sdk
         android:minSdkVersion="24"
         android:targetSdkVersion="24"/>
-
-    <application
-        android:label="@string/device_settings_app_name"
-        android:persistent="true">
-
-        <receiver android:name=".BootCompletedReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </receiver>
-
-        <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
-        </service>
-
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-    </application>
 </manifest>
