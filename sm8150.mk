@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
-    android.hardware.soundtrigger@2.1-impl \
+    android.hardware.soundtrigger@2.2-impl \
     android.hardware.audio@5.0 \
     android.hardware.audio.common@5.0 \
     android.hardware.audio.common@5.0-util \
