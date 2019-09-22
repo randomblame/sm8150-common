@@ -124,7 +124,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 #    /vendor/firmware_mnt:/firmware
 
 # Symlinks
-TARGET_MOUNT_POINTS_SYMLINKS := false
+TARGET_MOUNT_POINTS_SYMLINKS := true
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
