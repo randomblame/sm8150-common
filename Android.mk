@@ -44,9 +44,9 @@ endif
 
 $(PERSIST_MOUNT_POINT):
 	@echo "Creating $(PERSIST_MOUNT_POINT)"
-#ifneq ($(TARGET_MOUNT_POINTS_SYMLINKS),false)
-#	@ln -sf /mnt/vendor/persist $(TARGET_ROOT_OUT)/persist
-#endif
+ifneq ($(TARGET_MOUNT_POINTS_SYMLINKS),false)
+	@ln -sf /mnt/vendor/persist $(TARGET_ROOT_OUT)/persist
+endif
 
 RFS_MSM_ADSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/adsp/
 $(RFS_MSM_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
