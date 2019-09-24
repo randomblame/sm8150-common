@@ -55,6 +55,11 @@ setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VEND
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
+BLOB_ROOT="${MK_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
+
+patchelf --add-needed "libprocessgroup.so" "${BLOB_ROOT}/vendor/lib/hw/audio.primary.msmnile.so" 
+patchelf --add-needed "libprocessgroup.so" "${BLOB_ROOT}/vendor/lib64/hw/audio.primary.msmnile.so"
+
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     source "${MY_DIR}/../${DEVICE}/extract-files.sh"
